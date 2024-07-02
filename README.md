@@ -16,25 +16,22 @@ Java Development Kit (JDK) 11 or higher installed
 ## Build from Source
 Clone the repository:
 
-```bash
+``` bash
 git clone https://github.com/kerodotou01/currency-app
 cd currency-app
-
-## Run the application:
-
-Go to the path of the project and to the /out directory and run the below: 
-
-`` bash
-java -jar exchange-rate-finder.jar
-
 
 ## Compile the Java source code:
 
 1. Go to the path of the project
 2. Compile the java source files: javac -d out src/main/java/currency/*.java src/main/java/currency/CurrencyMain.java
 3. Create the jar: cd out; jar cfe exchange-rate-finder.jar main.java.currency.CurrencyMain .
-4. Copy resources: cd ..; cp currencies.csv out/
-5. Run the jar: java -jar exchange-rate-finder.jar
+
+## Run the application:
+
+Go to the path of the project and to the /out directory and run the below: 
+
+``` bash
+java -jar exchange-rate-finder.jar
 
 ## Usage
 Run the application and follow the command-line prompts to retrieve exchange rates for specific dates and currency pairs.
